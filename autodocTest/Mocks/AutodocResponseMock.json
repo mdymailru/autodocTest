@@ -1,0 +1,55 @@
+{
+    "news": [
+        {
+            "id": 6912,
+            "title": "Peugeot 408 Coupe 2023 для тех, кто устал от скучных семейных автомобилей",
+            "description": "Компания Peugeot решила не оставаться в стороне от самой популярной сегодня дизайнерской тенденции",
+            "publishedDate": "2022-06-24T00:00:00",
+            "url": "avto-novosti/peugeot _coupe",
+            "fullUrl": "https://www.autodoc.ru/avto-novosti/peugeot _coupe",
+            "titleImageUrl": "https://file.autodoc.ru/news/avto-novosti/1456586202_1.jpg",
+            "categoryType": "Автомобильные новости"
+        },
+        {
+            "id": 6911,
+            "title": "Салон Honda CR-V 2023 будет напоминать интерьер Civic",
+            "description": "Автомобиль Honda CR-V пользуется популярностью на многих рынках. ",
+            "publishedDate": "2022-06-23T00:00:00",
+            "url": "avto-novosti/Honda_CR-V_2023",
+            "fullUrl": "https://www.autodoc.ru/avto-novosti/Honda_CR-V_2023",
+            "titleImageUrl": "https://file.autodoc.ru/news/avto-novosti/503655842_2.jpg",
+            "categoryType": "Автомобильные новости"
+        },
+        {
+            "id": 6910,
+            "title": "Volkswagen ID. AERO — предвестник электрического седана среднего размера",
+            "description": "Volkswagen выпустил интригующий тизер будущего электрического седана",
+            "publishedDate": "2022-06-22T00:00:00",
+            "url": "avto-novosti/Volkswagen_aero",
+            "fullUrl": "https://www.autodoc.ru/avto-novosti/Volkswagen_aero",
+            "titleImageUrl": "https://file.autodoc.ru/news/avto-novosti/1282924891_1.jpg",
+            "categoryType": "Автомобильные новости"
+        },
+        {
+            "id": 6908,
+            "title": "Концепт Mercedes eActros LongHaul дебютирует в сентябре",
+            "description": "Разработка Tesla Semi все еще ведется, а конкуренты уже не дремлют",
+            "publishedDate": "2022-06-21T00:00:00",
+            "url": "avto-novosti/mercedes_eactros",
+            "fullUrl": "https://www.autodoc.ru/avto-novosti/mercedes_eactros",
+            "titleImageUrl": "https://file.autodoc.ru/news/avto-novosti/1200725468_1.jpg",
+            "categoryType": "Автомобильные новости"
+        },
+        {
+            "id": 6907,
+            "title": "Новый Hyundai Stargazer для азиатского рынка",
+            "description": "Компания Hyundai опубликовала первые тизеры нового Stargazer",
+            "publishedDate": "2022-06-20T00:00:00",
+            "url": "avto-novosti/hyundai_stargazer",
+            "fullUrl": "https://www.autodoc.ru/avto-novosti/hyundai_stargazer",
+            "titleImageUrl": "https://file.autodoc.ru/news/avto-novosti/1113563123_1.jpg",
+            "categoryType": "Автомобильные новости"
+        }
+    ],
+    "totalCount": 905
+}
