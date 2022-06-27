@@ -43,7 +43,7 @@ struct NewsView: View {
 
 struct NewsItemView: View {
    
-    let vm: NewsViewModel.NewsItem
+    var vm: NewsViewModel.NewsItem
     
     var body: some View {
         
@@ -51,14 +51,13 @@ struct NewsItemView: View {
             VStack {
                 Text(vm.title).font(.title3)
                 
-                
                 if let imgUrl = vm.imageUrl  {
                 
                 if let image = vm.image {
                     image
                         .resizable()
                         .scaledToFit()
-                        .cornerRadius(10)
+                        //.cornerRadius(10)
                         
                 } else {
                     
@@ -81,6 +80,7 @@ struct NewsItemView: View {
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .cornerRadius(10)
+                                .onAppear { vm.image = image }
                  
                         case let .failure(error):
                             ImagePlaceholderView()

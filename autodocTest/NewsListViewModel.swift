@@ -14,6 +14,7 @@ class NewsViewModel: ObservableObject {
     @Published
     var items: [ItemViewModel]
     let viewSignal: PassthroughSubject<ItemViewModel, Never> = .init()
+    //let viewSignalImg: PassthroughSubject<Image,>
     
     private let model: Model
     private var bindings = Set<AnyCancellable>()
@@ -59,6 +60,10 @@ class NewsViewModel: ObservableObject {
                 
                 for (index, item) in pageNews.newsPageData.enumerated() {
 
+                    if case .news = items[nextId + index] {
+                        //???
+                    } else {
+                        
                     withAnimation(Animation.linear(duration: 1.5)) {
                         self.items[nextId + index] = ItemViewModel
                                                         .news(.init(id: nextId + index,
@@ -68,6 +73,7 @@ class NewsViewModel: ObservableObject {
                                                                     page: pageNews.page,
                                                                     action: {}))
                         print("Fetched: \(nextId + index)")
+                    }
                     }
                 }
                 
@@ -114,13 +120,22 @@ class NewsViewModel: ObservableObject {
     
 //MARK: Item ViewModels
     
-    struct NewsItem: Identifiable {
+    class NewsItem: Identifiable {
         var id: Int
         let title: String
-        let image: Image?
+        var image: Image?
         let imageUrl: String?
         let page: Int
         let action: () -> Void
+        
+        init(id: Int, title: String, image: Image?, imageUrl: String?, page: Int, action: @escaping () -> Void) {
+            self.id = id
+            self.title = title
+            self.image = image
+            self.imageUrl = imageUrl
+            self.page = page
+            self.action = action
+        }
     }
     
     struct PlaceholderItem: Identifiable {
