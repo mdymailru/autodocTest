@@ -64,7 +64,7 @@ class NewsViewModel: ObservableObject {
                                                         .news(.init(id: nextId + index,
                                                                     title: item.title,
                                                                     image: nil,
-                                                                    imageUrl: item.titleImageUrl ?? "Error",
+                                                                    imageUrl: item.titleImageUrl,
                                                                     page: pageNews.page,
                                                                     action: {}))
                         print("Fetched: \(nextId + index)")
@@ -118,7 +118,7 @@ class NewsViewModel: ObservableObject {
         var id: Int
         let title: String
         let image: Image?
-        let imageUrl: String
+        let imageUrl: String?
         let page: Int
         let action: () -> Void
     }

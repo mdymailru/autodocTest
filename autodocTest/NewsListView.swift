@@ -51,6 +51,9 @@ struct NewsItemView: View {
             VStack {
                 Text(vm.title).font(.title3)
                 
+                
+                if let imgUrl = vm.imageUrl  {
+                
                 if let image = vm.image {
                     image
                         .resizable()
@@ -58,8 +61,9 @@ struct NewsItemView: View {
                         .cornerRadius(10)
                         
                 } else {
-                        
-                    AsyncImage(url: URL(string: vm.imageUrl)) { state in
+                    
+                    //change for add cache
+                    AsyncImage(url: URL(string: imgUrl)) { state in
                         switch state {
 
                         case .empty:
@@ -88,7 +92,7 @@ struct NewsItemView: View {
                         }
                     }
                 }
-                                
+                }
             }
         }
         .padding(.vertical)
